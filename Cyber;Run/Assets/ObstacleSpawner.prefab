@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa9d51e0efb01d47a388743ebd0042d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 2.5
   obstacle: {fileID: 9173192562545477555, guid: dd02dab761aa90f4d8994725fbe0dedc,
     type: 3}
-  height: 6
+  spawnInterval: 5
+  heightVariance: 10
