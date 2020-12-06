@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 4309500749605268771}
   - component: {fileID: 4309500749605268768}
   - component: {fileID: 4309500749605268769}
-  - component: {fileID: 1802284238051701085}
   m_Layer: 0
   m_Name: Building
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +92,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -107,15 +106,3 @@ EdgeCollider2D:
   - {x: -0.04968071, y: 5.6648836}
   - {x: -0.91978836, y: 5.6629014}
   - {x: -0.9184767, y: -6.99375}
---- !u!114 &1802284238051701085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4309500749605268783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981e9757a97461940a9c6ec02934d00f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

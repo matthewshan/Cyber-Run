@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building : MonoBehaviour
+public class HealthText : MonoBehaviour
 {
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
-/*        int scaler = ((int)Random.Range(0, 2) == 1) ? 1 : -1;
-        transform.rotation *= new Quaternion(1, scaler, 1, 1);*/
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<UnityEngine.UI.Text>().text = player.health.ToString();
     }
 }
