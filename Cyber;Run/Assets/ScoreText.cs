@@ -15,6 +15,6 @@ public class ScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<UnityEngine.UI.Text>().text = player.score.ToString();
+        GetComponent<UnityEngine.UI.Text>().text = "\tScore:" + player.score.ToString();
     }
 }

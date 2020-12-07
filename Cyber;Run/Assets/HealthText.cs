@@ -14,6 +14,6 @@ public class HealthText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<UnityEngine.UI.Text>().text = player.health.ToString();
+        GetComponent<UnityEngine.UI.Text>().text = "\tHealth:" + player.health.ToString();
     }
 }

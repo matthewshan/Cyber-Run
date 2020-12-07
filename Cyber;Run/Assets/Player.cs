@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Physics and Game
     public float velocity;
+    public GameController game;
     private Rigidbody2D playerBody;
-
+    
     // Health Mechanics
     public int health;
     public int invulnerableTime;
     private float invulTimer = 0;
     private double transparentIndex = 0;
+
+    // Regen Mechanics
+    public int regenThreshold = 10;
+    public int regenProgress = 0; 
 
     //Score Mechanics
     public int score;
@@ -52,17 +58,17 @@ public class Player : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // If enemy, decrement health and start the invul timer
         if (collision.gameObject.tag == "Enemy" && invulTimer == 0)
         {
             health--;
+            if (health <= 0)
+                game.GameOver();
+
+            regenProgress = 0;
+
             invulTimer = invulnerableTime;
         }
 
@@ -70,6 +76,15 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Score" && invulTimer == 0)
         {
             score++;
+
+            // Used for regen rules
+            regenProgress++;
+            if (regenProgress >= regenThreshold)
+            {
+                health++;
+                regenProgress = 0;
+                regenThreshold += 5;
+            }
         }
     }
 }
