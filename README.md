@@ -1,12 +1,5 @@
 # Cyber;Run
 
-## Step by Step
-1) Select New project
-
-2) Selected 2D. Then give your project the desired name and saved location
-
-3) You will now see a blank screen. Add the assets by dragging your files into the assets tab.
-
-4) Lets first add our background. Grab the new Background1 asset and move it to the scene editor. 
-
-5) Now, resize the camera to fit with the 
+Step by Step Tutorial: [Here](https://github.com/matthewshan/Cyber-Run/wiki/Cyber;Run-Tutorial)   
+Video Presentation: [Here](https://youtu.be/i1eAHA4uN80)   
+Slides: [Here](https://docs.google.com/presentation/d/1JEi2AwYFWU_1VF7RGW2wGMDOeIls2HQkI0jlbBmWp-U)   
